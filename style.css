@@ -7,9 +7,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
 }
+
+ /* =======================================================
+  Banner
+ ======================================================= */
+
 .container{
-	width: 1170px;
-	margin: auto;
+	max-width: 1170px;
+	margin:0 auto;
 }
 .bg-color{
 		background-color: rgba(0, 0, 0, 0.41);
@@ -23,37 +28,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu {
 	width: 100%;
-    padding: 40px 0;
-    background-color:rgba(0,0,0,0.0	); 
-    position: fixed;
-    transition: all 0.5s;
+  padding: 40px 0;
+  background-color:rgba(0,0,0,0.0	); 
+  position: fixed;
+  transition: all 0.5s;
+  z-index: 1;
 }
-.toggle {
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    padding: 0;
-   
-  
-}
+
 .bg-nav{
-    background-color:rgba(0,0,0,0.8); 	
-    padding: 25px 0 38px 0;
-    z-index: 1;
+  background-color:rgba(0,0,0,0.8); 	
+  padding: 25px 0 38px 0;
+  z-index: 1;
 }
 
 .leftmenu {
-	width: 25%;
+	width:30%;
 	float: left;
 }
 .leftmenu h3 {
 	padding-left: 30px;
-    font-weight: bolder;
-    font-size: 34px;
-    color: white;
-    letter-spacing: 2px;
-    margin: 0;
-    margin-top: -7px;
+  font-weight: bolder;
+  font-size: 34px;
+  color: white;
+  letter-spacing: 2px;
+  margin: 0;
+  margin-top: -7px;
 	
 }
 .leftmenu a {
@@ -65,26 +64,38 @@ h1, h2, h3, h4, h5, h6 {
  }
 .rightmenu {
 	float: right;
-    padding-right: 36px;
-    padding-top: 11px;
+  padding-right: 36px;
+  padding-top: 11px;
 }
+.toggle {
+  font-size: 30px;
+  color: #fff;
+  text-align: right;
+  padding: 0;
+  display: none;
+  }
+  .toggle:hover{
+    cursor: pointer;
+  }
+  /*.active-toggle{
+    display: block;
+    }*/
 .clear{
-	clear: both;
+  clear: both;
 }
 .rightmenu ul li {
-   
-   display: inline;
-   list-style-type: none;
-   font-size: 14px;
-   color: #fff;
-   font-weight: 400;
-    margin-left: 36px; 
-    text-transform: uppercase;
+  display: inline;
+  list-style-type: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 36px; 
+  text-transform: uppercase;
 
 }
 .rightmenu ul {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 .rightmenu ul li a:hover {
 	color:#FFD34E;
@@ -103,19 +114,19 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 }
 .text h4 {
-	 font-size: 27px;
-	 margin-bottom: 20px;
-	 margin-top: 10px;
-	 text-transform: uppercase;
-	 letter-spacing: 4px;
+	font-size: 27px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
 }
 .text h1 {
 	font-size: 123px;
-    margin: 0;
-    text-transform: uppercase;
-    padding-top: 13px;
-    letter-spacing: 4px;
-    font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 13px;
+  letter-spacing: 4px;
+  font-weight: 700;
 }
 .text h3{
 	font-size: 50px;
@@ -125,19 +136,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 #btn {
 	background: #FFD34E;
-    border: 0px;
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 13px 40px;
-    font-weight: normal;
-    border-radius: 0px;
-    letter-spacing: 1px;
-    color: #333;
-    margin-top: 6px;
-    border:2px solid transparent;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out
+  border: 0px;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 13px 40px;
+  font-weight: normal;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  color: #333;
+  margin-top: 6px;
+  border:2px solid transparent;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out
 }
 #btn:hover {
 	background-color: #fff;
@@ -145,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 	border:2px solid #FFD34E;
 }
+
+/* =======================================================
+   border box
+ ======================================================= */
 .box {
 	border:5px solid #FFD34E;
 	margin: 40px 0;
@@ -156,25 +171,30 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	text-align: center;
 	color: #333;
+  margin-bottom: 10px;
 }
 .dec-tec {
-    font-size: 34px;
+  font-size: 34px;
 }
+/* =======================================================
+  Feature 
+ ======================================================= */
+
 .bgcolor {
 	background-color:#f8f8f8;
-	padding: 55px 65px;
+	padding: 60px 0;
 }
 hr{
 	margin-top: 35px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee
 }
 .btm-line {
 	background-color: #2b2b2b;
-    width: 34px;
-    height: 3px;
-    display: inline-block;
+  width: 34px;
+  height: 3px;
+  display: inline-block;
 }
 .bgcolor {
 	display: flex;
@@ -197,9 +217,9 @@ hr{
 }
 .icon {
 	font-size: 35px;
-    margin-top: 20px;
-    margin-right: 35px;
-    color: #333;
+  margin-top: 20px;
+  margin-right: 35px;
+  color: #333;
 }
  .section .left h3 {
 	font-size:32px;
@@ -210,8 +230,8 @@ hr{
  	font-size:14px;
 	color: #888;
 	font-weight: 400;
-	line-height: 20px; 
-	width: 300px;
+	line-height: 21px; 
+	width: 260px;
 	margin: 0;
  }
 .section1 h4 {
@@ -226,22 +246,27 @@ hr{
  .section2>div>p,.section1>div>p {
  	margin-top: 15px;
  }
+ /* =======================================================
+  Subscibe   
+ ======================================================= */
+
  .cta-banner{
  	display: flex;
- 	background:url(img/cta-banner.jpg)  no-repeat center fixed;
+ 	background:url(img/cta-banner.jpg) no-repeat center fixed;
  	}
  .cta-banner .container{
  	display: flex;
  }
- .left-btn{
- 	flex: 1;
- }
+ /*.left-btn{
+ 	 flex: 1;
+ }*/
  .right {
    flex: 3;
-  margin: 50px 0;
+   margin: 70px 0;
+   padding: 0 10px 0 15px;
  }
  .right h4{
- 	font-size: 30px;
+ 	font-size: 32px;
  	font-weight: 600;
  	color: #fff;
  	margin-bottom: 15px;
@@ -249,17 +274,23 @@ hr{
  .right p{
  	font-size: 14px;
  	color: #fff;
- 	font-weight: 400;
  }
 .cta-banner .left-btn{
-	padding: 100px 0 100px 60px;
+	padding: 108px 47px 100px 140px;
+}
+/* =======================================================
+  Portfolio   
+ ======================================================= */
+
+.Porfolio{
+  padding-bottom: 60px;
 }
 .Porfolio .container{
   display: flex;
 }
 .gallery{
 	flex: 1;
-	margin: 60px 10px 0 10px;
+	margin: 60px 5px 0 10px;
 }
 .gallery img {
 	margin-bottom: 15px;
@@ -267,12 +298,13 @@ hr{
 }
 .left-section{
   flex: 3;
-  margin: 60px 0 0 0px;
+  margin: 45px 0 0 0px;
+  
 }
 .section h4,.left-section h4 {
 	font-size: 32px;
-    color: #2b2b2b;
-    margin-bottom: 0;
+  color: #2b2b2b;
+  margin-bottom: 0;
 }
 .cnt-page .txt-color{
 	color: #000;
@@ -282,16 +314,17 @@ hr{
 	font-family:Open Sans;
 	color: #888;
 	font-weight: 400;
-	line-height: 25px; 
+	line-height: 20px; 
 	margin-top: 0;
+  padding: 0px 41px 0 0px;
 }
 .cnt-page {
 	background: #f8f8f8;
 	padding-bottom: 35px;
 }
 .cnt-page .section {
-	margin: 35px 0;
-	padding-top: 60px;
+	padding-top: 50px;
+  width: 100%;
 	
 }
 .cnt-page .section p {
@@ -300,28 +333,29 @@ hr{
 	font-size: 14px;
 	margin: 0;
 	font-weight: 600;
+  margin-bottom: 40px;
 }
 .form-group {
     margin-bottom: 15px;
 }
 .form-control {
 	display: block;
-    width: 86%;
-    height: 24px;
-    padding: 5px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 86%;
+  height: 24px;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .form-group textarea {
   height: unset;
 }
 textarea.form-control {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 #btn1 {
 	background-color: #FFD34E;
@@ -329,7 +363,7 @@ textarea.form-control {
 	border:none;
 	line-height: 36px;
 	margin: 0 0 20px 0;
-	padding: 6px 12px;
+	padding: 0 12px;
 	font-weight: 100;
 	cursor: pointer;
 	text-decoration: none;
@@ -345,7 +379,7 @@ textarea.form-control {
 
 }
 .cnt-form{
-flex: 1;
+  flex: 1;
 }
 ::placeholder {
   color: #9C9C9C;
@@ -358,20 +392,20 @@ flex: 1;
 	text-align: right;
 }
  .mail-icon .mail{
-    font-size: 330px;
-    font-weight: 100;
-    color: #6f6f6f;
-    transform: rotate(23deg);
-    }
+  font-size: 330px;
+  font-weight: 100;
+  color: #6f6f6f;
+  transform: rotate(23deg);
+ }
 .section3 .cont-title {
  	font-size:20px; 
 	font-weight: 400;
 	color: #333;
 	margin-bottom: 20px;
  }
+ /*Footer*/
  #footer {
  	background: #191919;
- 	display: flex;
  	justify-content: space-between;
  	padding: 20px 60px 20px 60px;
  }
@@ -381,11 +415,10 @@ flex: 1;
  .cont-title h4{
  	margin: 0;
  	font-size: 24px;
-    padding: 15px 0px;
-    font-weight: 400;
+  padding: 15px 0px;
+  font-weight: 400;
  }
 .copyright {
- 	flex:10 ;
  	font-size: 14px;
  	color: #fff;
  	line-height: 30px;
@@ -438,29 +471,53 @@ flex: 1;
  } 
 
   /* =======================================================
-*   Media Query
-* ======================================================= */
+   Media Query
+ ======================================================= */
 @media screen and (max-width: 768px) {
-  .text h1 {
-    font-size: 65px;
+
+   .bg-nav{
+     padding: 0;
+   }
+  /* .menu {
+    padding: 20px 0;
+   }*/
+  .rightmenu ul li{
+    display: block;
+    padding: 20px;
     margin: 0;
-    text-transform: uppercase;
+  }
+  .leftmenu h3{
+    padding-left: 0;
+  }
+  .rightmenu ul{
+    display: none;
+  }
+  .rightmenu{
+    float: none;
+    background-color:rgba(0,0,0,0.8);
+    padding-top:0;
+    
+  }
+  .text{
+    padding-top: 160px;
+  }
+  .text h1 {
+    font-size: 55px !important;
+    margin: 0;
     padding-top: 13px;
     letter-spacing: 2px;
     font-weight: 700;
 }
   .text h4 {
-    font-size: 15px;
+    font-size: 15px !important;
     margin-bottom: 0px;
     margin-top: 5px;
-    text-transform: uppercase;
     letter-spacing: 2px;
 
   }
   .text h3 {
-    font-size: 22px;
+    font-size: 22px !important;
     margin: 10px 0 20px 0;
-    text-transform: uppercase;
     letter-spacing: 2px;
   }
   .bgimage {
@@ -474,8 +531,7 @@ flex: 1;
   	font-size: 20px;
   }
   .box {
-  	margin:40px 15px;
-  	width: 38%;
+  	margin:0;
   }
   .bgcolor {
   	padding: 20px 20px;
@@ -484,17 +540,35 @@ flex: 1;
   	width: 100%;
   	margin: 0;
   }
+
+  /* =======================================================
+   Feature
+ ======================================================= */
   .bgcolor .container {
   	display: block;
   }
+  .section1 h4{
+    font-size: 20px;
+  }
+  .section .left h3{
+    font-size: 26px;
+  }
   .cta-banner .container {
   	display: block;
+    padding: 0;
+  }
+  .section .left{
+    margin-top: 0 !important;
   }
   .cta-banner .left-btn {
-    padding: 0px 0 50px 150px;
+    padding: 0px 0 40px 0;
+    text-align: center;
   }
   .right {
     margin: 36px 20px;
+  }
+  .right h4{
+    font-size: 26px;
   }
   .right p {
   	line-height: 20px;
@@ -503,12 +577,213 @@ flex: 1;
  .section .left p {
  	width: 100%;
  }
+ .toggle{
+  display: block;
+ }
+
+  /* =======================================================
+   Portfolio
+ ======================================================= */
+ .gallery .flex{
+    display: block;
+   }
+ .left-section {
+     
+     padding:0;
+     margin: 0;
+   }
+   .left-section h4{
+    font-size: 26px;
+   }
   .Porfolio .container {
-  	display: block;
+  	 display: block;
+     padding: 20px 20px;
   }
-  .gallery img {
-  	display: block;
-  	width: 40%;
+  .gallery img{
+    margin:0 0 10px 0 !important;
+    width: 100%
+   }
+   .gallery {
+    margin:0;
+   }
+   .Porfolio {
+    padding-bottom:0;
+   }
+
+   /* =======================================================
+   Contact page
+ ======================================================= */
+   /*.cnt-page{
+    padding:20px 20px;
+   }*/
+   .cnt-page{
+    padding-bottom: 0;
+   }
+   .cnt-page .section {
+    padding: 0;
+   }
+   .info span{
+    font-size: 16px;
+   }
+   .section h4{
+    font-size: 26px;
+    margin-top: 20px;
+   }
+   .cnt-page .section p {
+    width: 100%;
+   }
+   .section3 {
+    display: block;
+   }
+   .form-control{
+    width: 95%;
+   }
+   .mail-icon{
+    display: none;
+   }
+   #footer{
+    padding: 0;
    }
 }
 
+@media screen and (max-width: 999px){
+    .rightmenu{
+      padding-top: 0;
+    }
+    .text h1{
+      font-size: 80px;
+    }
+    .text h4{
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    .text h3{
+      font-size: 28px;
+      margin-top: 12px;
+    }
+    .bg-color{
+      min-height: 460px;
+    }
+    .bgimage{
+      min-height: 460px;
+    }
+    .container{
+      padding: 20px 20px;
+    }
+    .box h3{
+      padding: 15px;
+      font-size: 19px;
+    }
+    .cta-banner .left-btn{
+      flex: none;
+    }
+     /* =======================================================
+     Feature page
+    ======================================================= */
+    .bgcolor {
+      padding: 20px 0;
+    }
+    .bgcolor .section1 {
+      margin-left: 25px;
+      width: 100%
+    }
+    .section .left {
+      margin-top: 30px;
+    }
+    .section1 h4{
+      font-size: 20px;
+    }
+    .bgcolor .container{
+      display: block;
+      margin: 0;
+    }
+    .section,.section .left p{
+      width: 100% !important;
+    }
+
+     /* =======================================================
+     Subsribe page
+    ======================================================= */
+    .cta-banner .left-btn{
+      flex: none;
+    }
+     /* =======================================================
+    Portfolio page
+    ======================================================= */
+    .Porfolio{
+      padding-bottom: 0;
+    }
+    .Porfolio .container{
+      display: block;
+    }
+   .flex{
+     display: flex;
+     flex-wrap: nowrap !important;
+   }
+   .gallery img{
+     margin:10px 10px 10px 15px;
+     width: 100%;
+     height: 100%;
+
+   }
+   .gallery{
+    margin:0;
+   }
+   /* =======================================================
+    contact page
+    ======================================================= */
+   .mail-icon{
+    display: none;
+   }
+   .cnt-page .section{
+    padding: 0
+   }
+   .copyright{
+    padding: 0;
+   }
+   /* =======================================================
+    footer page
+    ======================================================= */
+   #footer{
+    padding: 0;
+   }
+}
+@media screen and (max-width: 1200px){
+  /* =======================================================
+    Feature page
+    ======================================================= */
+    .bgcolor{
+      padding-top: 30px;
+    }
+     .container{
+      padding: 20px 20px;
+    }
+    /* =======================================================
+   Subscribe page
+    ======================================================= */
+  /* =======================================================
+   Porfolio page
+    ======================================================= */
+    .left-section p{
+      padding: 0;
+    }
+    .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery img{
+     margin:10px 10px 10px 15px;
+     width: 100%;
+     height: 100%;
+
+  }
+  .left-section{
+    flex: 1;
+  }
+   /* =======================================================
+   Contact page
+    ======================================================= */
+  .mail-icon .mail{
+    display: none;
+  }
+}

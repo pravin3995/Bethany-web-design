@@ -6,20 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon"  href="img/fav-icon.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet"  href="style.css">
   
 </head>
 <body>
-<!-- Banner -->
- <main>
+ <main><!-- Start Banner -->
   <header>
     <div class="bgimage">
       <div class="bg-color">
   	    <div class="menu ">
           <div class="container">
-  		        <div class="leftmenu">
+  		      <div class="leftmenu">
   			       <h3><a href=""> BETHANY </a></h3>
-  		        </div>
+  		      </div>
+            <div class="toggle">
+             <i class="fas fa-bars menus"></i>
+            </div>
   		        <div class="rightmenu">
   			        <ul>
   				         <li><a href="#" class="active"> Home </a></li>
@@ -28,11 +31,12 @@
   				        <li><a href="#"> Contact </a></li>
   			        </ul>
   	       </div>
+           
           <div class="clear"></div>
        </nav>      
   	 </div> 
     </div>
-  	<div class="text">
+  	<div class="text item" data-aos="fade-up">
   	 	<h4>Web Design & Development</h4>
   	    <h1>Bethany</h1>
   	    <h3> We Create Amazing Designs</h3>
@@ -40,8 +44,7 @@
   	 </div>
     </div>
    </div> 
-  </header> 
-  <!-- End Banner -->
+  </header><!-- End Banner -->
 
   <section class="container">
     <div class="box">
@@ -52,18 +55,16 @@
      </h3>
     </div> 
   </section>
-
-  <!-- Feature -->
-   <section class="bgcolor">
-     <div class="container">
- 	     <div class="section">
- 		     <div class="left">
+  <section class="bgcolor">  <!-- Start Feature -->
+    <div class="container ">
+ 	    <div class="section item" data-aos="fade-right">
+ 		    <div class="left">
 		 		   <h3>Features</h3>
 		 		   <hr class="btm-line">
 		 		   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..	</p>
- 		     </div>
+ 		    </div>
     	</div>
- 	    <div class="section1">
+ 	    <div class="section1 item" data-aos="fade-left">
         <div class="icon-  ">
           <div class="icon">
            <i class="fas fa-paint-brush"></i>
@@ -93,7 +94,7 @@
          </div> 
  	    </div>
 
- 	 <div class="section1">
+ 	 <div class="section1 item" data-aos="fade-left">
  		 <div class="icon-text">
        <div class="icon">
          <i class="fas fa-cogs"></i>
@@ -123,56 +124,51 @@
         </div> 
  	     </div>
      </div>
-    </section>	 
+    </section> <!-- End Feature --> 
 
-<!-- Subsribe -->
-   <div class="cta-banner">
+   <div class="cta-banner"><!--Start Subsribe -->
      <div class="container">
        <div class="right">
          <h4>Subscribe For Updates</h4>
           <p>Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
        </div>
           <div class="left-btn">
-            <a href="" id="btn"> SUBSRIBE NOW </a>
+            <a href="" id="btn"> SUBSCRIBE NOW </a>
           </div>
        </div>
-   </div>
- <!-- End Subsribe -->
+   </div> <!-- End Subsribe -->
 
-<!-- Porfolio page -->
-  <section class="Porfolio">
-    <div class="container">
-      <div class="left-section">
+  <section class="Porfolio"><!-- Porfolio page -->
+    <div class="container ">
+      <div class="left-section item" data-aos="fade-right">
         <h4>Portfolio</h4>
         <hr class="btm-line">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. </p>
       </div>
-        <div class="gallery">
-         <div>
+        <div class="gallery item" data-aos="zoom-out">
+         <div class="flex">
            <img src="img/1.jpg" alt="house" title="house">
-           <img src="img/2.jpg" alt="girl" title="girl">
+           <img src="img/2.jpg" alt="man" title="man">
          </div>
        </div> 
-         <div class="gallery">
-          <div>
-            <img src="img/3.jpg" alt="man" title="man">
-            <img src="img/4.jpg" alt="girl" title="girl">
+         <div class="gallery item" data-aos="zoom-out">
+          <div class="flex">
+            <img src="img/3.jpg" alt="book" title="book">
+            <img src="img/4.jpg" alt="girl" title="gril">
           </div>
         </div>   
-        <div class="gallery">
-         <div>
-           <img src="img/5.jpg" alt="book" title="book">
+        <div class="gallery" data-aos="zoom-out">
+         <div class="flex">
+           <img src="img/5.jpg" alt="img" title="img">
            <img src="img/6.jpg" alt="man" title="man">
          </div>
        </div>
      </div>   
-   </section>
- <!--  End Porfolio page -->
-
- <!--  Contact page -->
- <section class="cnt-page">
-  <div class="container">
-   <div class="section">
+   </section><!--  End Porfolio page -->
+ 
+  <section class="cnt-page"> <!--  Contact page -->
+   <div class="container item" data-aos="fade-up">
+    <div class="section">
      <h4 class="txt-color">Contact Us</h4>
      <hr class="btm-line">
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. </p>
@@ -195,7 +191,10 @@
       <div class="form-group">
         <textarea name="message" class="form-control" rows="6"  placeholder="Message"></textarea>
       </div>
-       <a href="#" id="btn1">Send</a>
+      <div >
+        <input type="button" name="submit" id="btn1" value="Send">
+      </div>
+       
      </form>
       
      </div>
@@ -227,9 +226,9 @@
    <footer id="footer">
     <div class="container">
      <div class="copyright">
-       @Theme- All rights reserved
+       <a href="#">@Theme</a>- All rights reserved
        <div>
-       Designed by <a href="">Theme</a>
+       Designed by <a href="#">Theme</a>
      </div>
      </div>
      
@@ -244,7 +243,12 @@
    </footer>
   <!-- End Footer -->
 </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
   <script type="text/javascript">
     $(function(){
     $(window).on("scroll" , function(){
@@ -255,7 +259,20 @@
       $(".menu").removeClass("bg-nav");
     }
     })
+    }); 
+  </script>
+  <script >
+      $(document).ready(function(){
+      $('.toggle').click(function(){
+      $('.rightmenu ul').toggle('active');
+      })
     });
   </script>
+  <script>
+  AOS.init({
+  duration: 1200,
+})
+
+</script>
 </body>
 </html>
