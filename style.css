@@ -707,7 +707,14 @@ textarea.form-control {
     .cta-banner .left-btn{
       flex: none;
     }
+    .right p{
+      line-height: 19px;
+    }
+    .cta-banner .left-btn {
+    padding: 108px 47px 100px 60px
+  }
      /* =======================================================
+    }
     Portfolio page
     ======================================================= */
     .Porfolio{
