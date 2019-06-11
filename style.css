@@ -42,8 +42,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .leftmenu {
-	width:30%;
+	/*width:30%;*/
 	float: left;
+  line-height: normal !important;
 }
 .leftmenu h3 {
 	padding-left: 30px;
@@ -53,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   margin: 0;
   margin-top: -7px;
+
 	
 }
 .leftmenu a {
